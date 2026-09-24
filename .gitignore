@@ -3,3 +3,4 @@ dist
 .env
 .DS_Store
 SOLUTION_GUIDE.md
+seed-local.js
