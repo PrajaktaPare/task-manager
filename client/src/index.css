@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-50: #ecf8f6;
+  --color-brand-100: #d0eeea;
+  --color-brand-500: #14907f;
+  --color-brand-600: #0f766e;
+  --color-brand-700: #0d5f59;
+  --color-ink: #1c2530;
+  --color-paper: #f5f6f3;
+}
+
+body {
+  @apply bg-paper text-ink antialiased;
+}
+.dark body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900;
+  }
+  .input {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none
+           focus:border-brand-500 focus:ring-2 focus:ring-brand-500/25
+           dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100;
+  }
+  .input-error {
+    @apply border-red-400 focus:border-red-500 focus:ring-red-500/20;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:cursor-not-allowed disabled:opacity-60
+           bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:cursor-not-allowed disabled:opacity-60
+           border border-slate-300 hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:cursor-not-allowed disabled:opacity-60
+           bg-red-600 text-white hover:bg-red-700;
+  }
+  .label {
+    @apply mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300;
+  }
+  .field-error {
+    @apply mt-1 text-xs text-red-600 dark:text-red-400;
+  }
+}
