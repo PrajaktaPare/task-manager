@@ -8,9 +8,9 @@ Built for the Full Stack Intern technical assessment.
 
 | | URL |
 |---|---|
-| Frontend (Vercel) | `https://YOUR-APP.vercel.app` |
-| Backend (Render) | `https://YOUR-API.onrender.com` |
-| API health check | `https://YOUR-API.onrender.com/` |
+| Frontend (Vercel) | `https://task-manager-pp-a747.vercel.app` |
+| Backend (Render) | `https://task-manager-h6wu.onrender.com` |
+| API health check | `https://task-manager-h6wu.onrender.com/` |
 
 > The backend is on Render's free tier, so the first request after a quiet period can take 30-50 seconds while it wakes up.
 
