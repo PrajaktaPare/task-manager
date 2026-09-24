@@ -31,9 +31,9 @@ Built for the Full Stack Intern technical assessment.
 |---|---|
 | ![Tasks](docs/screenshots/tasks.png) | ![Details](docs/screenshots/task-details.png) |
 
-| Dark mode | Mobile |
+| Light mode | Mobile |
 |---|---|
-| ![Dark](docs/screenshots/dark-mode.png) | ![Mobile](docs/screenshots/mobile.png) |
+| ![Light](docs/screenshots/light-mode.png) | ![Mobile](docs/screenshots/mobile.png) |
 
 ## Features
 
